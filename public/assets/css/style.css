@@ -542,17 +542,33 @@ main {
 
 .service-icon-box { margin-bottom: 10px; }
 
-.service-icon-box img { margin: auto; }
+.service-icon-box img { margin: auto; } 
 
-.service-content-box { text-align: center; }
+.service-item-title { margin-bottom: 7px; text-align: center; }
 
-.service-item-title { margin-bottom: 7px; }
-
-.service-item-text {
-  color: var(--light-gray);
+.service-item-text { 
+  color: var(--light-gray); 
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
-  line-height: 1.6;
+  line-height: 1.6; 
+  text-align: left !important;
+}
+
+.service-item-text p,
+.service-item-text ul,
+.service-item-text li {
+  color: var(--light-gray); 
+  text-align: start !important;
+}
+
+.service-item-text ul {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.service-item-text ul li {
+  margin-bottom: 5px;
 }
 
 
