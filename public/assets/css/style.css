@@ -333,7 +333,8 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 100px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .info-content .name {
@@ -404,11 +405,18 @@ main {
 }
 
 .contact-item {
-  min-width: 100%;
+  min-width: 100%; 
   display: flex;
   align-items: center;
   gap: 16px;
 }
+
+.contact-item a {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+} 
 
 .contact-info {
   max-width: calc(100% - 46px);
