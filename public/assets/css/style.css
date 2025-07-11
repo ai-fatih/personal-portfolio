@@ -1973,7 +1973,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
  
 
-
+@media (max-width: 768px) {
 /* Стили для мобильного меню */
 .mobile-menu {
   position: fixed;
@@ -1981,6 +1981,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   right: -1000px; 
   width: 100%;
   height: 100%;
+  overflow-y: auto;
   padding: 42px;
   opacity: 0;  
   scale: 0; 
@@ -2073,4 +2074,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 a.social-link { 
   margin-bottom: -1px !important;
+}
+
 }
