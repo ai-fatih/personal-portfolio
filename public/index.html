@@ -140,16 +140,14 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>about</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>portfolio</button>
-          </li>
+            <button class="navbar-link active" data-nav-link data-nav-link-name="about">Обо мне</button>
+        </li>
+        <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-nav-link-name="resume">Резюме</button>
+        </li>
+        <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-nav-link-name="portfolio">Портфолио</button>
+        </li>
 
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>blog</button>
@@ -163,6 +161,111 @@
 
       </nav>
 
+  <!-- HTML структура -->
+      <div class="burger-menu">
+        <div class="burger-icon" id="burger-icon">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="close-button" id="close-menu">
+              <div class="close-line-1"></div>
+              <div class="close-line-2"></div>
+            </div>
+           
+            <div class="sidebar-info">
+
+              <figure class="avatar-box">
+                <img src="./assets/images/my-avatar.png" alt="Владислав Фатихов" width="80">
+              </figure>
+      
+              <div class="info-content">
+                <h1 class="name" title="Владислав Фатихов">Владислав Фатихов</h1>
+      
+                <p class="title" title="Веб разработчик">Веб разработчик</p>
+              </div> 
+      
+            </div>
+
+            <div class="separator"></div>
+            
+            <nav>
+            <ul class="navbar-list navbar-list-burger">
+
+              <li class="navbar-item">
+                <button class="navbar-link active" data-nav-link data-nav-link-name="about">Обо мне</button>
+            </li>
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link data-nav-link-name="resume">Резюме</button>
+            </li>
+            <li class="navbar-item">
+                <button class="navbar-link" data-nav-link data-nav-link-name="portfolio">Портфолио</button>
+            </li> 
+
+            </ul>
+          </nav>
+
+          <div class="separator"></div>
+
+          <div> 
+            <ul class="contacts-list">
+              <li class="contact-item">
+                <a href="https://t.me/vladislav_fatikhov" target="_blank" rel="noopener noreferrer">
+                  
+                <div class="icon-box">
+                  <ion-icon name="send-outline"></ion-icon>
+                </div>
+    
+                <div class="contact-info">
+                  <p class="contact-title">Чат</p>
+    
+                   <span class="contact-link">  
+                    Написать в телеграм
+                  </span> 
+                </div>
+              </a>
+              </li>
+    
+              <li class="contact-item">
+                <a href="https://yandex.ru/business/widget/request/company/73747680932" target="_blank" rel="noopener noreferrer">
+                  
+                <div class="icon-box">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+    
+                <div class="contact-info">
+                  <p class="contact-title">Консультация</p>
+    
+                   <span class="contact-link">  
+                    Оставить заявку
+                  </span> 
+                </div>
+              </a>
+              </li>
+            </ul>
+    
+            <div class="separator"></div>
+    
+            <ul class="social-list center social-list-mobile">
+      
+              <li class="social-item">
+                <a href="mailto:info@fatih.digital" class="social-link" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="mail"></ion-icon>
+                </a>
+              </li>
+    
+              <li class="social-item">
+                <a href="https://github.com/ai-fatih" class="social-link" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li> 
+               
+            </ul> 
+             
+          </div>
+        </div>
+      </div>
 
 
 
@@ -195,9 +298,9 @@
           <ul class="service-list">
 
             <li class="service-item">
-              <div class="service-icon-box">
+             <!--  <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div> 
+              </div>  -->
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Frontend-разработка (HTML/CSS/JavaScript)</h4>
@@ -221,10 +324,10 @@
 
             <li class="service-item">
  
-              <div class="service-icon-box">
+              <!-- <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg
                 " alt="design icon" width="40">
-              </div>
+              </div> -->
 
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Веб-дизайн, UI/UX, Figma</h4>
