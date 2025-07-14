@@ -29,6 +29,10 @@
 "bugs": {
     "url": "https://github.com/ai-fatih/personal-portfolio/issues"
   },
+  "funding": {
+  "type": "patreon",
+  "url": "https://patreon.com/fatikhov"
+},
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.13",
