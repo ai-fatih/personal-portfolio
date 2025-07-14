@@ -1,0 +1,54 @@
+{
+    "name": "Владислав Фатихов - Веб разработчик",
+    "short_name": "Веб разработчик",
+    "description": "Создаю сайты под ключ: веб-дизайн, верстка, frontend, UI/UX, поддержка и обучение.",
+    "icons": [
+        {
+            "src": "/assets/images/favicon/favicon-16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/favicon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/favicon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/favicon-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/favicon-180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/favicon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/favicon-256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/favicon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#222222",
+    "background_color": "#222222",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "orientation": "any",
+    "prefer_related_applications": false
+}

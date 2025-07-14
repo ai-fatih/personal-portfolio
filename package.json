@@ -1,15 +1,35 @@
 {
   "name": "personal-portfolio",
   "version": "1.0.0",
-  "description": "npm install -g http-server http-server -p 8080",
+  "description": "Personal portfolio of Vladislav Fatikhov — web development, design, frontend.",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open",
     "build": "webpack --mode=production"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "portfolio",
+    "web development",
+    "frontend",
+    "UI/UX",
+    "Figma",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Vladislav Fatikhov",
+    "website design",
+    "freelance"
+  ],
+   "author": "Vladislav Fatikhov",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/ai-fatih/personal-portfolio.git"
+},
+"homepage": "https://fatih.digital",
+"bugs": {
+    "url": "https://github.com/ai-fatih/personal-portfolio/issues"
+  },
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "browser-sync-webpack-plugin": "^2.4.0",
