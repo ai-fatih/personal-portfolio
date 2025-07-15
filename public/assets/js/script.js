@@ -134,72 +134,16 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-const burgerIcon = document.getElementById('burger-icon');
-const mobileMenu = document.getElementById('mobile-menu');
-const closeButton = document.getElementById('close-menu');
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+const burger = document.querySelector('.burger-toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeBtn = document.querySelector('.close-menu');
 
-// Функция для управления видимостью меню и крестика
-const toggleMenu = () => {
-    mobileMenu.classList.toggle('active');
-    if (mobileMenu.classList.contains('active')) {
-        closeButton.style.display = 'flex';
-    } else {
-        closeButton.style.display = 'none';
-    }
-};
-burgerIcon.addEventListener('click', () => {
-    toggleMenu();
-});
-closeButton.addEventListener('click', () => {
-    toggleMenu();
-}); 
-  
-function handleNavigation(event) {
-  event.preventDefault();
-
-  const clickedLink = event.currentTarget;
-  const targetPage = clickedLink.dataset.navLinkName;
-
-  // Убираем активность со всех ссылок и страниц
-  navigationLinks.forEach(link => link.classList.remove('active'));
-  pages.forEach(page => page.classList.remove('active'));
-
-  // Активируем все ссылки с таким же navLinkName
-  document.querySelectorAll(`.navbar-link[data-nav-link-name="${targetPage}"]`)
-    .forEach(link => link.classList.add('active'));
-
-  // Активируем целевую страницу
-  pages.forEach(page => {
-    if (page.dataset.page === targetPage) {
-      page.classList.add('active'); 
-    }
-  });
-
-  // Скроллим вверх
-  window.scrollTo(0, 0);
-  mobileMenu.classList.contains('active')?mobileMenu.classList.remove('active'):''
- 
-}
-
-// Вешаем обработчик на все ссылки
-navigationLinks.forEach(link => {
-  link.addEventListener('click', handleNavigation);
+burger.addEventListener('click', () => {
+  mobileMenu.classList.add('mobile-menu--active');
+  mobileMenu.setAttribute('aria-hidden', 'false');
 });
 
-// Если нужно при загрузке синхронизировать:
-function syncMenus() {
-  const activeLink = document.querySelector('.navbar-link.active');
-  if (activeLink) {
-    const linkName = activeLink.dataset.navLinkName;
-    document.querySelectorAll(`.navbar-link[data-nav-link-name="${linkName}"]`)
-      .forEach(link => link.classList.add('active'));
-
-    pages.forEach(page => {
-      page.classList.toggle('active', page.dataset.page === linkName);
-    });
-  }
-}
-
-syncMenus();
+closeBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('mobile-menu--active');
+  mobileMenu.setAttribute('aria-hidden', 'true');
+});

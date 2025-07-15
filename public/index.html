@@ -97,12 +97,28 @@
           <img src="./assets/images/my-avatar.png" alt="Владислав Фатихов" width="80">
         </figure>
 
+        <div class="info-content-wrapper">
         <div class="info-content">
           <h1 class="name" title="Владислав Фатихов">Владислав Фатихов</h1>
 
           <p class="title" title="Веб разработчик">Веб разработчик</p> 
         </div>
+        <ul class="social-list">
+  
+          <li class="social-item">
+            <a href="mailto:info@fatih.digital" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </li>
 
+          <li class="social-item">
+            <a href="https://github.com/ai-fatih" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li> 
+           
+        </ul> 
+      </div>  
         <!-- <button class="info_more-btn" data-sidebar-btn> 
           <span>Показать контакты</span>
 
@@ -113,8 +129,7 @@
 
       <div class="sidebar-info_more">
 
-        <div class="separator"></div>
-
+       
         <ul class="contacts-list">
           <li class="contact-item">
             <a href="https://t.me/vladislav_fatikhov" target="_blank" rel="noopener noreferrer">
@@ -150,24 +165,6 @@
           </a>
           </li>
         </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-  
-          <li class="social-item">
-            <a href="mailto:info@fatih.digital" class="social-link" target="_blank" rel="noopener noreferrer">
-              <ion-icon name="mail"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/ai-fatih" class="social-link" target="_blank" rel="noopener noreferrer">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li> 
-           
-        </ul> 
         
       </div>
 
@@ -213,111 +210,99 @@
 
       </nav>
 
-  <!-- HTML структура -->
-      <div class="burger-menu">
-        <div class="burger-icon" id="burger-icon">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-        </div>
-        <div class="mobile-menu" id="mobile-menu">
-            <div class="close-button" id="close-menu">
-              <div class="close-line-1"></div>
-              <div class="close-line-2"></div>
-            </div>
-           
-            <div class="sidebar-info">
+ <!-- 1. Кнопка бургер -->
+<button class="burger-toggle" aria-label="Открыть меню">
+  <span class="burger-line"></span>
+  <span class="burger-line"></span>
+  <span class="burger-line"></span>
+</button>
 
-              <figure class="avatar-box">
-                <img src="./assets/images/my-avatar.png" alt="Владислав Фатихов" width="80">
-              </figure>
-      
-              <div class="info-content">
-                <h2 class="name" title="Владислав Фатихов">Владислав Фатихов</h2>
-      
-                <p class="title" title="Веб разработчик">Веб разработчик</p> 
-              </div> 
-      
-            </div>
+<!-- 2. Мобильное меню -->
+<aside class="mobile-menu" aria-hidden="true">
+  
+  <!-- Стеклянный фон -->
+  <div class="glass-bg"></div>
+  
+  <!-- Контент модалки -->
+  <div class="mobile-menu-content">
+    
+    <!-- Кнопка закрыть -->
+    <button class="close-menu" aria-label="Закрыть меню">
+      <span class="close-line close-line-1"></span>
+      <span class="close-line close-line-2"></span>
+    </button>
+ 
+    <!-- Навигация --> 
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li><a href="#about">Услуги</a></li>
+        <li><a href="#resume">Резюме</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+      </ul>
+    </nav>
 
-            <div class="separator"></div>
+     <!-- Соцсети -->
+     <ul class="social-list-mobile">
+  
+      <li class="social-item">
+        <a href="mailto:info@fatih.digital" class="social-link" target="_blank" rel="noopener noreferrer">
+          <ion-icon name="mail"></ion-icon>
+        </a>
+      </li>
+
+      <li class="social-item">
+        <a href="https://github.com/ai-fatih" class="social-link" target="_blank" rel="noopener noreferrer">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </li> 
+       
+    </ul> 
+
+    <!-- Контакты -->
+    <div class=" mobile-nav">
+
+       
+      <ul class=" mobile-nav-list">
+        <li>
+          <a href="https://t.me/vladislav_fatikhov" target="_blank" rel="noopener noreferrer">
             
-            <nav>
-            <ul class="navbar-list navbar-list-burger">
-
-              <li class="navbar-item">
-                <button class="navbar-link active" data-nav-link data-nav-link-name="about">Услуги</button>
-            </li>
-            <li class="navbar-item">
-                <button class="navbar-link" data-nav-link data-nav-link-name="resume">Резюме</button>
-            </li>
-            <li class="navbar-item">
-                <button class="navbar-link" data-nav-link data-nav-link-name="portfolio">Портфолио</button>
-            </li> 
-
-            </ul>
-          </nav>
-
-          <div class="separator"></div>
-
-          <div> 
-            <ul class="contacts-list">
-              <li class="contact-item">
-                <a href="https://t.me/vladislav_fatikhov" target="_blank" rel="noopener noreferrer">
-                  
-                <div class="icon-box">
-                  <ion-icon name="send-outline"></ion-icon>
-                </div>
-    
-                <div class="contact-info">
-                  <p class="contact-title">Чат</p>
-    
-                   <span class="contact-link">  
-                    Написать в телеграм
-                  </span> 
-                </div>
-              </a>
-              </li>
-    
-              <li class="contact-item">
-                <a href="https://yandex.ru/business/widget/request/company/73747680932" target="_blank" rel="noopener noreferrer">
-                  
-                <div class="icon-box">
-                  <ion-icon name="phone-portrait-outline"></ion-icon>
-                </div>
-    
-                <div class="contact-info">
-                  <p class="contact-title">Консультация</p>
-    
-                   <span class="contact-link">  
-                    Оставить заявку
-                  </span> 
-                </div>
-              </a>
-              </li>
-            </ul>
-    
-            <div class="separator"></div>
-    
-            <ul class="social-list center social-list-mobile">
-      
-              <li class="social-item">
-                <a href="mailto:info@fatih.digital" class="social-link" target="_blank" rel="noopener noreferrer">
-                  <ion-icon name="mail"></ion-icon>
-                </a>
-              </li>
-    
-              <li class="social-item">
-                <a href="https://github.com/ai-fatih" class="social-link" target="_blank" rel="noopener noreferrer">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
-              </li> 
-               
-            </ul> 
-             
+          <div class="icon-box">
+            <ion-icon name="send-outline"></ion-icon>
           </div>
-        </div>
-      </div>
+
+          <div class="contact-info">
+            <p class="contact-title">Чат</p>
+
+             <span class="contact-link">  
+              Написать в телеграм
+            </span> 
+          </div>
+        </a>
+        </li>
+
+        <li>
+          <a href="https://yandex.ru/business/widget/request/company/73747680932" target="_blank" rel="noopener noreferrer">
+            
+          <div class="icon-box">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">Консультация</p>
+
+             <span class="contact-link">  
+              Оставить заявку
+            </span> 
+          </div>
+        </a>
+        </li>
+      </ul>
+      
+    </div>
+ 
+  </div> <!-- / .mobile-menu-content -->
+
+</aside>
 
 
 
@@ -649,9 +634,18 @@
         </section> -->
 
         <section class="testimonials testimonials-yandex"> 
-          <iframe src="https://yandex.ru/sprav/widget/rating-badge/73747680932?type=rating&theme=dark" width="150" height="50" frameborder="0"></iframe>
-          </section>
+           
+          <!-- Profi.ru widget start -->
+           <!--  <div class="profi-widget" data-id="3f490d1857acc52864b15e27837c3fc4" data-type="300x100">
+              Powered by <a href="https://profi.ru/profile/FatihovVI">Profi.ru</a>
+            </div>
+            <script src="https://profi.ru/jqs/widget/widget.js"></script>
+          --> <!-- Profi.ru widget end -->
+           <iframe src="https://yandex.ru/sprav/widget/rating-badge/73747680932?type=rating&theme=dark" width="150" height="50" frameborder="0"></iframe>
+</section>
+          
       </article>
+
 
 
 
@@ -1325,7 +1319,7 @@
   <!--
     - custom js link
   -->
-  <script src="/dist/bundle.js"></script>
+  <script src="/assets/js/script.js"></script>
 
   <!--
     - ionicon link
