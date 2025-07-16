@@ -1,0 +1,103 @@
+#pre-load{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#pre-load .loader-inner{
+    --loader-background:linear-gradient(0deg,rgba(50,50,50,.2) 0%,rgba(100,100,100,.2) 100%);
+    position:relative;
+    width: 240px;
+    height: 78px;
+    aspect-ratio:1;
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+}
+#pre-load .loader-inner .loader-logo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    animation:color-change 2s infinite ease-in-out;
+    z-index:999 
+}
+
+#pre-load .loader-inner .box{
+    position:absolute;
+    background:var(--loader-background);
+    border-radius:12px;
+    border-top:1px solid rgb(100,100,100);
+    box-shadow:rgba(0,0,0,.3) 0 10px 10px 0;
+    animation:ripple 2s infinite ease-in-out 
+}
+#pre-load .loader-inner .fix{
+    display: flex    ;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    height:60px;
+  position:absolute;
+    background:var(--loader-background);
+    border-radius:12px;
+    border-top:1px solid rgb(100,100,100);
+    box-shadow:rgba(0,0,0,.3) 0 10px 10px 0;
+    backdrop-filter:blur(5px); 
+   aspect-ratio:1/1;
+   z-index:99
+} 
+#pre-load .loader-inner .fix a {
+    min-width: 100%; 
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border-radius: 12px; 
+}
+#pre-load .loader-inner .fix a .contact-info {
+    width: max-content !important;
+    padding: 0 42px 0 0;
+}
+ 
+#pre-load .loader-inner .box:nth-child(2){
+   inset:10%;
+   z-index:96;
+   border-color:rgba(100,100,100,.4);
+   animation-delay:.8s
+}
+#pre-load .loader-inner .box:nth-child(3){
+   inset:6%;
+   z-index:95;
+   border-color:rgba(100,100,100,.2);
+   animation-delay:1s
+}
+@keyframes ripple{
+    0%{
+       transform:scale(1);
+       box-shadow:rgba(0,0,0,.3) 0 10px 10px 0
+   }
+    50%{
+       transform:scale(1.1);
+       box-shadow:rgba(0,0,0,.3) 0 30px 20px 0
+   }
+    100%{
+       transform:scale(1);
+       box-shadow:rgba(0,0,0,.3) 0 10px 10px 0
+   }
+}
+@keyframes color-change{
+    0%{
+       opacity:.7
+   }
+    50%{
+       opacity:1
+   }
+    100%{
+       opacity:.7
+   }
+}
