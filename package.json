@@ -20,19 +20,19 @@
     "website design",
     "freelance"
   ],
-   "author": "Vladislav Fatikhov",
- "repository": {
-  "type": "git",
-  "url": "https://github.com/ai-fatih/personal-portfolio.git"
-},
-"homepage": "https://fatih.digital",
-"bugs": {
+  "author": "Vladislav Fatikhov",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ai-fatih/personal-portfolio.git"
+  },
+  "homepage": "https://fatih.digital",
+  "bugs": {
     "url": "https://github.com/ai-fatih/personal-portfolio/issues"
   },
   "funding": {
-  "type": "patreon",
-  "url": "https://patreon.com/fatikhov"
-},
+    "type": "patreon",
+    "url": "https://patreon.com/fatikhov"
+  },
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.13",
@@ -42,5 +42,8 @@
     "webpack": "^5.0.0",
     "webpack-cli": "^4.0.0",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "openai": "^5.12.2"
   }
 }
